@@ -1,0 +1,32 @@
+# Doxygen configuration for ascii85 project
+
+# Project meta
+PROJECT_NAME           = ascii85
+PROJECT_BRIEF          = "ASCII85 encoder/decoder"
+OUTPUT_DIRECTORY       = docs
+
+# Inputs
+INPUT                  = include src
+RECURSIVE              = YES
+FILE_PATTERNS          = *.h *.hpp *.c *.cc *.cpp
+EXCLUDE_PATTERNS       = */build/* */.git/*
+
+# Extraction
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = NO
+JAVADOC_AUTOBRIEF      = YES
+
+# Warnings
+WARN_IF_UNDOCUMENTED   = NO
+WARN_AS_ERROR          = NO
+
+# HTML output
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_XML           = NO
+
+# Misc
+QUIET                  = YES
